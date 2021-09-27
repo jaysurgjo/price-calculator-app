@@ -48,7 +48,7 @@ end
 #printed the table
 puts "Item     Quantity      Price"
 puts "--------------------------------------"
-grocery_items.each { |item| puts "#{item[:name]}      #{item[:quantity]}            #{item[:price]}" }
+grocery_items.each { |item| puts "#{item[:name]}      #{item[:quantity]}            #{item[:price]}"}
 #parsed with the each method to list the varibles needed
 puts "Total price : #{sprintf("%.2f", grocery_items.sum { |h| h[:price] })}"
 #used sprintf "%.2f" to turn the float number into a rounded number. 2 decimal points
