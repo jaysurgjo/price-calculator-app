@@ -27,7 +27,18 @@ class Sale_item
   end
 end
 
+def items_bought
+  def list
+  puts "Please enter all the items purchased separated by a comma:"
+  @grocery = gets.chomp
+  end
+end
+
 private
+
+def sum_bill
+  
+end
 
 def show_price_table
   puts "Item     Unit price        Sale price"
@@ -39,11 +50,9 @@ def show_price_table
 end
 
 def list_items
-  puts "Please enter all the items purchased separated by a comma:"
   puts "Item     Quantity      Price"
   puts "--------------------------------------"
   puts "#{item}      #{quantity}            #{price}"
-
   puts "Total price : #{total}"
   puts "You saved #{saved_money} today."
   
