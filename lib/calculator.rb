@@ -1,11 +1,11 @@
-class Calculator
+class Grocery
 
-  @@grocery = Hash.new
+  @@grocery = {}
 
   def initialize(item, quantity, price)
-    @item
-    @quantity
-    @price
+    @item = item
+    @quantity = quantity
+    @price = price
   end
 
   def self.all
@@ -14,12 +14,18 @@ class Calculator
 end
 
 class Sale_item
-  @@sale_item = Hash.new
+  @@sale_items = {}
+
+  attr_reader = :item, :unit_price, :sale_price
 
   def initialize(item, unit_price, sale_price)
-    @item
-    @unit_price
-    @sale_price
+    @item = item
+    @unit_price = unit_price
+    @sale_price = sale price
+  end
+
+  def initialize(item, unit_price, sale_price)
+    @@sale_items[item] = new(item: item, unit_price: unit_price, sale_price: sale_price)
   end
 
   def self.all
@@ -36,7 +42,7 @@ end
 
 private
 
-def sum_bill
+def total_bill
 
 end
 
@@ -59,13 +65,13 @@ def list_items
 end
 
 begin
-  Grocery.new('banana', 0.99)
-  Grocery.new('apple', 0.89)
-  Grocery.new('milk', 3.97)
-  Grocery.new('bread', 2.17)
-  Sale_item.new('milk', 2, 5.00)
-  Sale_item.new('bread', 3, 6.00)
+  Grocery.new('banana', 1,  0.99)
+  Grocery.new('apple', 1,  0.89)
+  Grocery.new('milk', 1, 3.97)
+  Grocery.new('bread', 1, 2.17)
+  #Sale_item.new('milk', 2, 5.00)
+  #Sale_item.new('bread', 3, 6.00)
 
-  calculator = Calculator.new
-  calculator.sum_bill
+  grocery = Grocery.new
+  #grocery.sum_bill
 end
