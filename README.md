@@ -1,3 +1,4 @@
-# price-calculator-app
+# Price-calculator-app
 # The app can be opened in the terminal and ran through irb.
-# invoke file with irb -r ./calculator.rb.
+# Invoke file with irb -r ./calculator.rb.
+# Or cd into file folder and run ruby calculator.rb
