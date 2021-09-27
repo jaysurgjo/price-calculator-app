@@ -37,7 +37,7 @@ end
 private
 
 def sum_bill
-  
+
 end
 
 def show_price_table
@@ -56,4 +56,16 @@ def list_items
   puts "Total price : #{total}"
   puts "You saved #{saved_money} today."
   
+end
+
+begin
+  Grocery.new('banana', 0.99)
+  Grocery.new('apple', 0.89)
+  Grocery.new('milk', 3.97)
+  Grocery.new('bread', 2.17)
+  Sale_item.new('milk', 2, 5.00)
+  Sale_item.new('bread', 3, 6.00)
+
+  calculator = Calculator.new
+  calculator.sum_bill
 end
