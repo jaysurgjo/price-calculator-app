@@ -1,12 +1,30 @@
 class Calculator
-  def grocery
 
+  @@grocery = Hash.new
+
+  def initialize(item, quantity, price)
+    @item
+    @quantity
+    @price
   end
+
+  def self.all
+    @@grocery
+  end
+end
+
+class Sale_item
+  @@sale_item = Hash.new
 
   def initialize(item, unit_price, sale_price)
-
+    @item
+    @unit_price
+    @sale_price
   end
 
+  def self.all
+    @@sale_item
+  end
 end
 
 private
